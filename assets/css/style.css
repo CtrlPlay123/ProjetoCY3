@@ -1,0 +1,51 @@
+/*BODY & HEAD*/
+body{
+    background-color: aliceblue;
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+
+/*HEADER*/
+header{
+    background-color: rgb(117, 231, 123);
+}
+ul{
+    list-style-type: none;
+    
+}
+li{
+    display: inline;
+    margin-right: 5em;
+}
+/*CONTEUDO*/
+#catologo{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px; /* Espaçamento entre os itens */
+    background-color: #000000;
+    border-radius: 2em;
+    height: auto;
+    align-content: center;
+}
+.produto{
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    width:128px;
+    border-radius: 1em;
+}
+a.link-c{
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s;
+}
+a.link-c:hover{
+    color: rgb(0, 60, 255);
+}
+
+/*PRODUTO*/
+
+/*FOOTER*/

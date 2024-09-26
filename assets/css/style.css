@@ -1,25 +1,85 @@
-/*BODY & HEAD*/
-body{
-    background-color: aliceblue;
-    color: aliceblue;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0;
-    overflow-x: hidden;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  scroll-padding-top: 2rem;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --green-color: #5B8048;
+  --blue-color: #164189;
+  --yellow-color: #DAC176;
+  --grey-color: #8C9AA3;
+  --text-color: #1a2428;
+  --bg-color: #fff;
 }
 
 
-/*HEADER*/
-header{
-    background-color: rgb(117, 231, 123);
+body {
+  color: var(--text-color);
 }
-ul{
-    list-style-type: none;
-    
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--bg-color);
+  box-shadow: 0 8px 11px rgb(14 55 54 / 15%);
+  padding: 20px 100px;
+  transition: 0.5s;
 }
-li{
-    display: inline;
-    margin-right: 5em;
+
+.logo{
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-color);
+  column-gap: 0.5rem;
 }
+
+.logo img {
+  height: 2rem;
+}
+
+.navbar {
+  display: flex;
+  column-gap: 0.5rem;
+}
+
+.navbar a {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-color);
+  padding: 0.5rem 1rem;
+}
+
+.navbar a:hover, 
+.navbar .home-active {
+  background-color: var(--blue-color);
+  border-radius: 5rem;
+  color: var(--bg-color);
+  transition: background 0.5s;
+}
+
+#menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 10001;
+  display: none;
+}
+
 /*CONTEUDO*/
 #catologo{
     display: grid;

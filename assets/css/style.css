@@ -111,3 +111,59 @@ a.link-c:hover{
 /*PRODUTO*/
 
 /*FOOTER*/
+
+/*Barra de busca*/
+
+
+.buscar-box{
+  height: 64px;
+  width: 64px;
+  background-color: #1c54b3;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  transition: 2s;
+  border-radius: 1em;
+}
+
+.buscar-box.ativar{
+  width: 400px;
+}
+
+.buscar-box .lupa, .buscar-box .fechar{
+  min-width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.buscar-box .fechar i{
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+.buscar-box .lupa i{
+  font-size: 36px;
+}
+
+.buscar-box .buscar{
+  position: absolute;
+  left: 64px;
+  height: 100%;
+  width: calc(100% - 100px);
+  line-height: 64px;
+}
+
+.buscar-box .buscar input{
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background-color: #1c54b3;
+  color: white;
+}
+::placeholder{
+  color: #ffffffb8;
+}

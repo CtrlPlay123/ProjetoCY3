@@ -22,7 +22,7 @@ inputBusca.addEventListener('input', function(){   // Criando uma evento ao escr
     nomeProduto = produto.getAttribute('data-nome').toLowerCase(); 
 
     if (nomeProduto.includes(valorBusca)) { // Fazendo os produtos aparecer e esconder os não pesquisados //
-      produto.style.display = "block";
+      produto.style.display = "flex";
     } else {
       produto.style.display = "none";
     }

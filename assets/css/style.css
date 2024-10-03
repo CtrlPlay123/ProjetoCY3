@@ -114,8 +114,8 @@ a.link-c:hover{
 
 /*Barra de busca*/
 
-
-.buscar-box{
+/* determinei a largura e comprimento da caixa */
+.buscar-box{ 
   height: 64px;
   width: 64px;
   background-color: #1c54b3;
@@ -126,11 +126,11 @@ a.link-c:hover{
   transition: 2s;
   border-radius: 1em;
 }
-
+/* aumenta ao clicar no icone da lupa */
 .buscar-box.ativar{
   width: 400px;
 }
-
+/* Tamanho e alinhamento dos 2 icones */
 .buscar-box .lupa, .buscar-box .fechar{
   min-width: 64px;
   height: 64px;
@@ -139,16 +139,16 @@ a.link-c:hover{
   justify-content: center;
   cursor: pointer;
 }
-
+/* Tamanho e margem do X */
 .buscar-box .fechar i{
   font-size: 30px;
   margin-left: 10px;
 }
-
+/* Tamanho da lupa */
 .buscar-box .lupa i{
   font-size: 36px;
 }
-
+/* Conteiner do input */
 .buscar-box .buscar{
   position: absolute;
   left: 64px;
@@ -156,7 +156,7 @@ a.link-c:hover{
   width: calc(100% - 100px);
   line-height: 64px;
 }
-
+/* Retirando decoração e mudando a cor */
 .buscar-box .buscar input{
   border: none;
   outline: none;
@@ -164,6 +164,7 @@ a.link-c:hover{
   background-color: #1c54b3;
   color: white;
 }
+/* Texto quando não tem nada escrito */
 ::placeholder{
   color: #ffffffb8;
 }

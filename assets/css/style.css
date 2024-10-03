@@ -80,35 +80,88 @@ header {
   display: none;
 }
 
-/*CONTEUDO*/
-#catologo{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px; /* Espaçamento entre os itens */
-    background-color: #000000;
-    border-radius: 2em;
-    height: auto;
-    align-content: center;
+/* produtos menu */
+
+.produtos {
+  padding-top: 5rem;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
 }
-.produto{
-    background-color: #ffffff;
-    padding: 20px;
-    text-align: center;
-    width:128px;
-    border-radius: 1em;
+
+.produtos-menu {
+  width: 90%; 
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+  justify-content: center;
+  align-items: center;
+  gap: 20px; 
 }
-a.link-c{
-    text-decoration: none;
-    color: #fff;
-    transition: 0.5s;
+
+.produtos-menu .info {
+  background-color: rgb(221, 221, 221);
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; 
+  padding: 1rem;
+  height: 250px; 
+  box-sizing: border-box; 
+  overflow: auto;
 }
-a.link-c:hover{
-    color: rgb(0, 60, 255);
+
+.produtos-menu .info h3 {
+  font-size: 1rem; 
+  text-transform: uppercase; 
+  margin-bottom: 0.5rem; 
+  text-decoration: none; 
+  text-align: center; 
+  color: var(--green-color);
 }
 
 
+.produtos-menu .info span {
+  font-size: 1.4rem; 
+  margin: 0 0 1rem 0; 
+  padding-top: 1rem; 
+  color: var(--green-color);
+}
 
-/*PRODUTO*/
+.produtos-menu img {
+  width: 100%;
+  height: auto; 
+}
+
+.add-to-cart {
+  background-color: var(--blue-color); 
+  color: white; 
+  border: none; 
+  border-radius: 5px; 
+  padding: 10px 15px; 
+  font-size: 1rem; 
+  cursor: pointer; 
+  transition: background-color 0.3s, color 0.3s; 
+}
+
+.add-to-cart:hover {
+  background-color: white; 
+  color: var(--blue-color); 
+}
+
+.produtos-menu .produto {
+  transition: border 0.3s; 
+}
+
+.produtos-menu .produto:hover {
+  border: 2px solid var(--blue-color);
+}
+
 
 /*FOOTER*/
 

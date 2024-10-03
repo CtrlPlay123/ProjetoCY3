@@ -37,7 +37,7 @@ header {
   background: var(--bg-color);
   box-shadow: 0 8px 11px rgb(14 55 54 / 15%);
   padding: 20px 100px;
-  transition: 0.5s;
+  transition: 0.5s; 
 }
 
 .logo{
@@ -47,6 +47,7 @@ header {
   font-weight: 600 ;
   color: var(--text-color);
   column-gap: 0.5rem;
+  text-decoration: none;
 }
 
 .logo img {
@@ -71,6 +72,7 @@ header {
   border-radius: 5rem;
   color: var(--bg-color);
   transition: background 0.5s;
+  text-decoration: none;
 }
 
 #menu-icon {

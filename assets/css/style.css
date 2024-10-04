@@ -55,6 +55,11 @@ header {
   color: var(--text-color);
   column-gap: 0.5rem;
   text-decoration: none;
+  margin-right: 80px;
+}
+.logo:hover{
+  color: var(--text-color);
+  text-decoration: none;
 }
 
 .logo img {

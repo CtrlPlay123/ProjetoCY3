@@ -28,3 +28,47 @@ inputBusca.addEventListener('input', function(){   // Criando uma evento ao escr
     }
   })
 })
+
+// carrinho //
+
+let carrinho = [];
+const carrinhoElement = document.getElementById('carrinho');
+const totalElement = document.getElementById('total');
+const itensCarrinhoElement = document.querySelector('.itens-carrinho');
+
+
+function addToCart(nome, preco) {
+    const produto = { nome, preco };
+    carrinho.push(produto);
+    updateCarrinho();
+}
+
+
+function updateCarrinho() {
+    itensCarrinhoElement.innerHTML = '';
+    let total = 0;
+
+    carrinho.forEach(produto => {
+        const itemElement = document.createElement('div');
+        itemElement.textContent = `${produto.nome} - R$${produto.preco}`;
+        itensCarrinhoElement.appendChild(itemElement);
+        total += parseFloat(produto.preco);
+    });
+
+    totalElement.textContent = total.toFixed(2);
+}
+
+
+document.querySelector('.carrinho a').addEventListener('click', () => {
+    carrinhoElement.classList.toggle('active');
+});
+
+document.querySelectorAll('.add-to-cart').forEach(button => {
+    button.addEventListener('click', (event) => {
+        const produtoElement = event.target.closest('.produto');
+        const nome = produtoElement.getAttribute('data-nome');
+        const preco = produtoElement.querySelector('span').textContent.replace('R$', '').replace(',', '.');
+
+        addToCart(nome, preco);
+    });
+});

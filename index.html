@@ -48,7 +48,9 @@
           <i class="bi bi-cart4"></i>
         </a>
       </div>
+      
   </header>
+  
       
    <div id="anuncio">
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
@@ -80,7 +82,7 @@
               <div class="info">
               <h3>Papel Higiênico Personal Vip Neutro Folha Dupla </h3>
               <span>R$22,90</span>
-              <button class="add-to-cart">Adicione ao Carrinho</button>
+              <button class="add-to-cart" onclick="addToCart">Adicione ao Carrinho</button>
               </div>
           </div>
           <div class="produto" data-nome="Atum Ralado em Óleo Gomes da Costa Lata" data-categoria="alimento">
@@ -261,6 +263,13 @@
          </div>
          
     </section> 
+    <div class="carrinho-visualizacao" id="carrinho">
+      <h2>Carrinho de Compras</h2>
+      <div class="itens-carrinho"></div>
+      <div class="total">
+          <strong>Total: R$<span id="total">0.00</span></strong>
+      </div>
+    </div>
     <script src="assets\js\script.js"></script>
 </body>
 </html>

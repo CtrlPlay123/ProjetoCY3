@@ -95,6 +95,17 @@ header {
   display: none;
 }
 
+/* CAROUSEL */
+#carouselExampleSlidesOnly {
+  max-height: 500px; 
+  overflow: hidden; 
+  margin-top: 86px; 
+}
+.carousel-item img {
+  width: 100%; 
+  height: auto; 
+}
+
 /* PRODUTOS */
 
 .produtos {

@@ -68,8 +68,10 @@ header {
 
 .navbar {
   display: flex;
-  column-gap: 0.5rem;
+  column-gap: 0.2rem;
   margin: 0 20px;
+  align-items: center;
+  position: relative;
 }
 
 .navbar a {
@@ -204,7 +206,9 @@ header {
   display: flex;
   align-items: center;
   transition: width 0.5s;
+  margin-right: 15px;
 }
+
 .buscar-box .lupa i,
 .buscar-box .fechar i {
     color: white; 
@@ -225,6 +229,16 @@ header {
   justify-content: center;
   cursor: pointer;
 }
+
+.buscar-box .lupa {
+  left: 0; 
+}
+
+.buscar-box .fechar {
+  right: 0;
+  display: none; 
+}
+
 .buscar-box.ativar .fechar {
   display: flex; 
 }
@@ -242,7 +256,6 @@ header {
 }
 
 .buscar-box .buscar{
-  left: 48px;
   height: 100%;
   width: calc(100% - 75px);
   line-height: 48px;
@@ -253,10 +266,28 @@ header {
   outline: none;
   font-size: 12px;
   background-color: var(--blue-color);
-  padding-left: 13px;
+  padding-left: 10px;
   color: #fff;
+  width: 100%;
 }
 
 ::placeholder{
   color: #313131b8;
+}
+
+/* CARRINHO */
+.carrinho {
+  margin-left: 15px; 
+}
+
+.carrinho a {
+  color: var(--text-color);
+  font-size: 1.5rem; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carrinho a:hover {
+  color: var(--blue-color);
 }

@@ -275,6 +275,30 @@ header {
   color: #313131b8;
 }
 
+/* Parte dos Buttons */
+.busca-tag{
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-color);
+  padding: 0.5rem 1rem;
+  border: 0;
+  background: none;  /* Remove a cor de fundo */
+  outline: none;     /* Remove qualquer borda ao focar */
+  text-decoration: none;
+  cursor: pointer;   /* Define o cursor de ponteiro para o botão */
+}
+.busca-tag:hover{
+  background-color: var(--blue-color);
+  border-radius: 5rem;
+  color: var(--bg-color);
+  transition: background 0.5s;
+  text-decoration: none;
+}
+.busca-tag:focus{
+  outline-color: var(--blue-color);
+  border-radius: 5rem;
+}
+
 /* CARRINHO */
 .carrinho {
   margin-left: 15px; 

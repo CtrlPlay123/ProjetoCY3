@@ -29,6 +29,25 @@ inputBusca.addEventListener('input', function(){   // Criando uma evento ao escr
   })
 })
 
+// Parte dos buttons //
+let botoesCategoria = document.querySelectorAll(".busca-tag");
+
+botoesCategoria.forEach(function(botao){
+  botao.addEventListener('click', function(){
+    let categSelect = botao.getAttribute('data-categoria'); // Pega a categoria do botão clicado
+
+    produtos.forEach(function(produto){
+      let categProduto = produto.getAttribute("data-categoria");
+
+      if (categProduto.toLowerCase() === categSelect.toLowerCase() || categSelect === "todos") {
+        produto.style.display = "block"; // Mostra os produtos da categoria selecionada
+      } else {
+        produto.style.display = "none";  // Esconde os produtos que não correspondem à categoria
+      }
+    });
+  });
+});
+
 // carrinho //
 
 let carrinho = [];

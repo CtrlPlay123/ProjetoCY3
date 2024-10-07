@@ -90,6 +90,13 @@ header {
   text-decoration: none;
 }
 
+.busca-tag.active {
+  background-color: var(--blue-color);
+  color: var(--bg-color);
+  border-radius: 5rem; 
+}
+
+
 #menu-icon {
   font-size: 24px;
   cursor: pointer;

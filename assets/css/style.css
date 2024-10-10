@@ -348,3 +348,25 @@ header {
 header.noturno{
   background-color: rgb(134, 134, 134);
 }
+
+/* botao do modo noturno */
+.modo-noturno {
+  background: none; 
+  border: none; 
+  cursor: pointer; 
+  margin-left: 30px;
+}
+
+.modo-noturno i {
+  font-size: 20px; 
+  color: var(--blue-color); 
+  transition: color 0.3s; 
+}
+
+.modo-noturno:hover{
+  color: white;
+}
+
+.modo-noturno.active i {
+  color: white; 
+}

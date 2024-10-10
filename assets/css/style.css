@@ -340,3 +340,11 @@ header {
   right: 0;
 }
 
+/* parte do Modo noturno */
+.produtos.noturno{
+  background-color: #1a2428;
+  color: #fff;
+}
+header.noturno{
+  background-color: rgb(134, 134, 134);
+}

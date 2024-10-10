@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> <!--Biblioteca de icones-->
+  <link rel="shortcut icon" href="assets\images\icon.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="assets\css\style.css">
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FloorEarth</title>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <a href="#" class="logo"><img src="Assets/images/logo.png" alt="">FloorEarth</a>
+
+
+      <div class="bx bx-menu" id="menu-icon"></div>
+      <ul class="navbar">
+        <li>
+          <button class="busca-tag home" type="button"  data-categoria="home">Home</button>
+          <button class="busca-tag" type="button" data-categoria="alimento">Alimentos</button>
+          <button class="busca-tag" type="button" data-categoria="bebida">Bebidas</button>
+          <button class="busca-tag" type="button" data-categoria="limpeza">Limpeza</button>
+          <button class="busca-tag" type="button" data-categoria="higiene">Higiene</button>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      
+      <!-- Barra de Pesq. -->
+      <div class="buscar-box"> <!--A caixa onde tudo abaixo vai ficar, ela é alterada no CSS para ficar maior ou voltar ao normal-->
+        <div class="lupa"> <!--Imagem da lupa para abrir a caixa de pesquisa-->
+          <i class="bi bi-search"></i>
+        </div>
+
+        <div class="buscar"> <!--Caixa de busca, onde o usuario vai escrever-->
+          <input type="text" name="" id="input-busca" placeholder="O que você busca?">
+        </div>
+
+        <div class="fechar"> <!--Imagem de um 'X' para fechar a caixa de pesquisa-->
+          <i class="bi bi-x-lg"></i>
+        </div>
+      </div>
+
+      <div class="carrinho">
+        <a href="#">
+          <i class="bi bi-cart4"></i>
+        </a>
+      </div>
+      
+  </header>
+  
+      
+   <div id="anuncio">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="assets/images/anuncios/Seara-Chicken-Supreme-1200x400-iNbePm.jpg" alt="Primeiro Slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="assets/images/anuncios/home-3-IPgeiO.png" alt="Segundo Slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="assets/images/anuncios/1-BJdODh.png" alt="Terceiro Slide">
+        </div>
+      </div>
+    </div>
+  
+    <section class="produtos" id="produtos">
+      <div class="produtos-menu">
+          <div class="produto" data-nome="Biscoito Grande Arroz Sem Glúten Natural Life - 80g" data-categoria="alimento">
+              <img src="assets/images/produtos/43c9b9a7-eac7-4903-96fb-dae3b67b92d0.jpg">
+              <div class="info">
+              <h3>Biscoito Grande Arroz Sem Glúten Natural Life - 80g</h3>
+              <span>R$6,15</span>
+              <button class="add-to-cart">Adicione ao Carrinho</button>
+              </div>
+          </div>
+          <div class="produto" data-nome="Papel Higiênico Personal Vip Neutro Folha Dupla" data-categoria="higiene">
+              <img src="assets/images/produtos/ff4d366c-135d-4924-85b5-9a3c5a409b35.jpg">
+              <div class="info">
+              <h3>Papel Higiênico Personal Vip Neutro Folha Dupla </h3>
+              <span>R$22,90</span>
+              <button class="add-to-cart">Adicione ao Carrinho</button>
+              </div>
+          </div>
+          <div class="produto" data-nome="Atum Ralado em Óleo Gomes da Costa Lata" data-categoria="alimento">
+              <img src="assets/images/produtos/2123fd33-3e27-4c70-8899-642ce02423dd.jpg">
+              <div class="info">
+              <h3>Atum Ralado em Óleo Gomes da Costa Lata - 130g</h3>
+              <span>R$7,85</span>
+              <button class="add-to-cart">Adicione ao Carrinho</button>
+              </div>
+          </div>
+          <div class="produto" data-nome="Ketchup Heinz Squeeze" data-categoria="alimento">
+              <img src="assets/images/produtos/c5a7c453-1332-445e-b54e-c97f3af4ab77.jpg">
+              <div class="info">
+              <h3>Ketchup Heinz Squeeze - 567g</h3>
+              <span>R$14,50</span>
+              <button class="add-to-cart">Adicione ao Carrinho</button>
+              </div>
+          </div>
+          <div class="produto" data-nome="Cereal Matinal Nestlé Nescau Chocolate Caixa - 210g" data-categoria="alimento">
+            <img src="assets/images/produtos/48eb27c8-e593-4aec-aa3f-f875a0e52640-2.jpg">
+            <div class="info">
+            <h3>Cereal Matinal Nestlé Nescau Chocolate Caixa - 210g</h3>
+            <span>R$6,99</span>
+            <button class="add-to-cart">Adicione ao Carrinho</button>
+            </div>
+          </div>
+         <div class="produto" data-nome="Iogurte Integral Morango Batavo Pedaços Copo - 100g" data-categoria="alimento">
+          <img src="assets/images/produtos/ead28128-bc0b-4fc3-99f6-445230937f7c.jpg">
+          <div class="info">
+          <h3>Iogurte Integral Morango Batavo Pedaços Copo - 100g</h3>
+          <span>R$1,99</span>
+          <button class="add-to-cart">Adicione ao Carrinho</button>
+          </div>
+         </div>
+         <div class="produto" data-nome="Limpador Sanitário Pato Limpeza Profunda Gel Marine Oferta Especial Squeeze - 750ml" data-categoria="limpeza">
+          <img src="assets/images/produtos/8f75535f-2643-4f3b-a4a2-645a9af50e83.jpg">
+          <div class="info">
+          <h3>Limpador Sanitário Pato Limpeza Profunda Gel Marine Oferta Especial Squeeze - 750ml</h3>
+          <span>R$16,90</span>
+          <button class="add-to-cart">Adicione ao Carrinho</button>
+          </div>
+         </div>
+         <div class="produto" data-nome="Água de Coco Coco Super Caixa - 1L" data-categoria="bebida">
+          <img src="assets/images/produtos/439d02a3-fc22-46df-a947-fbdc83aae12a.jpg">
+          <div class="info">
+          <h3>Água de Coco Coco Super Caixa - 1L</h3>
+          <span>R$8,49</span>
+          <button class="add-to-cart">Adicione ao Carrinho</button>
+          </div>
+         </div>
+         <div class="produto" data-nome="Vinho Tinto Argentino Alma Negra Blend Garrafa - 750ml" data-categoria="bebida">
+          <img src="assets/images/produtos/eb9f4075-e5e8-4cbd-ac1f-3d0b8fd5ff76.jpg">
+          <div class="info">
+          <h3>Vinho Tinto Argentino Alma Negra Blend Garrafa - 750ml</h3>
+          <span>R$189,90</span>
+          <button class="add-to-cart">Adicione ao Carrinho</button>
+          </div>
+         </div>
+         <div class="produto" data-nome="Energético Açaí com Guaraná Zero Açúcar TNT Lata - 473ml" data-categoria="bebida">
+          <img src="assets/images/produtos/88ca8b0e-ca2a-4d3d-b365-7fcb3ce836c7.jpg">
+          <div class="info">
+          <h3>Energético Açaí com Guaraná Zero Açúcar TNT Lata - 473ml</h3>
+          <span>R$6,69</span>
+          <button class="add-to-cart">Adicione ao Carrinho</button>
+          </div>
+         </div>
+         <div class="produto" data-nome="Absorvente com Abas Cobertura Suave Maxi Proteção Always Médio Pacote - 32 Unidades" data-categoria="higiene">
+          <img src="assets/images/produtos/25ec0ee4-c916-4834-8f43-f8b81d8281d2.jpg">
+          <div class="info">
+          <h3>Absorvente com Abas Cobertura Suave Maxi Proteção Always Médio Pacote - 32 Unidades</h3>
+          <span>R$26,90</span>
+          <button class="add-to-cart">Adicione ao Carrinho</button>
+          </div>
+         </div>
+         <div class="produto" data-nome="Inseticida Aerossol Raid Mata Baratas e Formigas - 285ml" data-categoria="limpeza">
+          <img src="assets/images/produtos/3d5943bc-81ac-4ca3-b75a-6dd77fba0f22.jpg">
+          <div class="info">
+          <h3>Inseticida Aerossol Raid Mata Baratas e Formigas - 285ml</h3>
+          <span>R$16,90</span>
+          <button class="add-to-cart">Adicione ao Carrinho</button>
+          </div>
+         </div>
+         <div class="produto" data-nome="Empanado de Frango Peito com Queijo Sadia Nuggets Pacote - 300g" data-categoria="alimento">
+          <img src="assets/images/produtos/9110908d-2c74-46dd-8669-9b4ab9477a6a.jpg">
+          <div class="info">
+          <h3>Empanado de Frango Peito com Queijo Sadia Nuggets Pacote - 300g</h3>
+          <span>R$9,90</span>
+          <button class="add-to-cart">Adicione ao Carrinho</button>
+          </div>
+         </div>
+         <div class="produto" data-nome="Tablete de Manteiga Cruzilia Com Sal - 200g" data-categoria="alimento">
+          <img src="assets/images/produtos/f4dd41c7-586e-49cd-a8b2-64809be67f00.jpg">
+          <div class="info">
+          <h3>Tablete de Manteiga Cruzilia Com Sal - 200g</h3>
+          <span>R$13,90</span>
+          <button class="add-to-cart">Adicione ao Carrinho</button>
+          </div>
+         </div>
+         <div class="produto" data-nome="Enxaguante Antisséptico Bucal Listerine Cool Mint Zero Álcool Hortelã Frasco - 500ml" data-categoria="higiene">
+          <img src="assets/images/produtos/cb1e85f4-c321-4c33-9135-52f4c787f082.jpg">
+          <div class="info">
+          <h3>Enxaguante Antisséptico Bucal Listerine Cool Mint Zero Álcool Hortelã Frasco - 500ml</h3>
+          <span>R$20,90</span>
+          <button class="add-to-cart">Adicione ao Carrinho</button>
+          </div>
+         </div>
+         <div class="produto" data-nome="Desodorante Aerossol Antiperspirante Cherry Giovanna Baby Sweet Collection - 150ml" data-categoria="higiene">
+          <img src="assets/images/produtos/bb89a7e8-f60f-42c7-b29c-1f9dc5042977.jpg">
+          <div class="info">
+          <h3>Desodorante Aerossol Antiperspirante Cherry Giovanna Baby Sweet Collection - 150ml</h3>
+          <span>R$15,90</span>
+          <button class="add-to-cart">Adicione ao Carrinho</button>
+          </div>
+         </div>
+         <div class="produto" data-nome="Desodorante Jato Seco Antiperspirante Classic Giovanna Baby Frasco - 150ml" data-categoria="higiene">
+          <img src="assets/images/produtos/37dbe12c-88dc-4c04-bf29-1a117cc7c751.jpg">
+          <div class="info">
+          <h3>Desodorante Jato Seco Antiperspirante Classic Giovanna Baby Frasco - 150ml</h3>
+          <span>R$15,90</span>
+          <button class="add-to-cart">Adicione ao Carrinho</button>
+          </div>
+         </div>
+         <div class="produto" data-nome="Empanado de Frango Seara Recheado Com Levíssimo e Peito de Frango e Mussarela - 110g" data-categoria="alimento">
+          <img src="assets/images/produtos/a9562588-28fa-46c9-a547-aba4357481e1.jpg">
+          <div class="info">
+          <h3>Empanado de Frango Seara Recheado Com Levíssimo e Peito de Frango e Mussarela - 110g</h3>
+          <span>R$3,69</span>
+          <button class="add-to-cart">Adicione ao Carrinho</button>
+          </div>
+         </div>
+         <div class="produto" data-nome="Bebida à Base de Soja Ades Sabor Laranja Caixa - 1L" data-categoria="bebida">
+          <img src="assets/images/produtos/274ce9b8-7a3a-4450-b78a-ed69cd89ff25.jpg">
+          <div class="info">
+          <h3>Bebida à Base de Soja Ades Sabor Laranja Caixa - 1L</h3>
+          <span>R$7,99</span>
+          <button class="add-to-cart">Adicione ao Carrinho</button>
+          </div>
+         </div>
+         <div class="produto" data-nome="Suco Misto Del Valle Sabor Abacaxi Caixa - 1L" data-categoria="bebida">
+          <img src="assets/images/produtos/c59a45fd-787f-4bce-8842-03348317627a.jpg">
+          <div class="info">
+          <h3>Suco Misto Del Valle Sabor Abacaxi Caixa - 1L</h3>
+          <span>R$6,99</span>
+          <button class="add-to-cart">Adicione ao Carrinho</button>
+          </div>
+         </div>
+         <div class="produto" data-nome="Lava-Roupas Pó Omo Lavagem Perfeita Caixa 1,6kg - Grátis 320g" data-categoria="limpeza">
+          <img src="assets/images/produtos/0f3fd7c7-faf0-420b-ab6f-04dc25ff2edf.jpg">
+          <div class="info">
+          <h3>Lava-Roupas Pó Omo Lavagem Perfeita Caixa 1,6kg - Grátis 320g</h3>
+          <span>R$18,90</span>
+          <button class="add-to-cart">Adicione ao Carrinho</button>
+          </div>
+         </div>
+         <div class="produto" data-nome="Cerveja Lager Premium Puro Malte Heineken Garrafa - 600ml" data-categoria="bebida">
+          <img src="assets/images/produtos/08ad814c-8481-4ec8-a62d-e1f683d36b51.jpg">
+          <div class="info">
+          <h3>Cerveja Lager Premium Puro Malte Heineken Garrafa - 600ml</h3>
+          <span>R$12,69</span>
+          <button class="add-to-cart">Adicione ao Carrinho</button>
+          </div>
+         </div>
+         <div class="produto" data-nome="Picanha Bovino Montana Steakhouse - 1,6Kg" data-categoria="alimento">
+          <img src="assets/images/produtos/a1417081-ecae-437a-a2b7-9181043c59b1.jpg">
+          <div class="info">
+          <h3>Picanha Bovino Montana Steakhouse - 1,6Kg</h3>
+          <span>R$126,24</span>
+          <button class="add-to-cart">Adicione ao Carrinho</button>
+          </div>
+         </div>
+         <div class="produto" data-nome="Kit Shampoo 375ml + Condicionador 170ml L`oréal Paris Elseve Glycolic Gloss Preço Especial" data-categoria="higiene">
+          <img src="assets/images/produtos/1a68dbdb-a41a-4892-b418-4b1fb9a66b04.jpg">
+          <div class="info">
+          <h3>Kit Shampoo 375ml + Condicionador 170ml L`oréal Paris Elseve Glycolic Gloss Preço Especial</h3>
+          <span>R$30,90</span>
+          <button class="add-to-cart">Adicione ao Carrinho</button>
+          </div>
+         </div>
+         <div class="produto" data-nome="Refrigerante Coca-Cola Original Lata - 350ml" data-categoria="bebida">
+          <img src="assets/images/produtos/8965dfdc-2c29-4685-8a47-c5931fa12e63.jpg">
+          <div class="info">
+          <h3>Refrigerante Coca-Cola Original Lata - 350ml</h3>
+          <span>R$2,99</span>
+          <button class="add-to-cart">Adicione ao Carrinho</button>
+          </div>
+         </div>
+         <div class="produto" data-nome="Refrigerante Coca-Cola Original Garrafa - 1,5L" data-categoria="bebida">
+          <img src="assets/images/produtos/b0d9e3cd-a94f-4ec5-8580-e4aa4fabdccb.jpg">
+          <div class="info">
+          <h3>Refrigerante Coca-Cola Original Garrafa - 1,5L</h3>
+          <span>R$7,99</span>
+          <button class="add-to-cart">Adicione ao Carrinho</button>
+          </div>
+         </div>
+         <div class="produto" data-nome="Kit Shampoo 300ml + Condicionador 150ml Pantene Pro-V Miracles Equilíbrio Raiz e Pontas" data-categoria="higiene">
+          <img src="assets/images/produtos/292f2e2a-56a5-4dc4-b947-e5ea3f2fa955.jpg">
+          <div class="info">
+          <h3>Kit Shampoo 300ml + Condicionador 150ml Pantene Pro-V Miracles Equilíbrio Raiz e Pontas</h3>
+          <span>R$23,90</span>
+          <button class="add-to-cart">Adicione ao Carrinho</button>
+          </div>
+         </div>
+         <div class="produto" data-nome="Máscara de Tratamento Profissional Blend de Óleos Tresemmé Brilho Lamelar Pote - 400g" data-categoria="higiene">
+          <img src="assets/images/produtos/428ceb45-fa70-486c-8909-4607c8e904a6.jpg">
+          <div class="info">
+          <h3>Máscara de Tratamento Profissional Blend de Óleos Tresemmé Brilho Lamelar Pote - 400g</h3>
+          <span>R$29,90</span>
+          <button class="add-to-cart">Adicione ao Carrinho</button>
+          </div>
+         </div>
+         <div class="produto" data-nome="Sobrecoxa de Frango Sadia Temperada - 800g" data-categoria="alimento">
+          <img src="assets/images/produtos/f227b36a-939f-4be9-8d23-60ef657a3787.jpg">
+          <div class="info">
+          <h3>Sobrecoxa de Frango Sadia Temperada - 800g</h3>
+          <span>R$11,90</span>
+          <button class="add-to-cart">Adicione ao Carrinho</button>
+          </div>
+         </div>
+         <div class="produto" data-nome="Amaciante de Roupa Concentrado Brisa Suave Downy Frasco - 3L" data-categoria="higiene">
+          <img src="assets/images/produtos/82b3a8e8-a541-4a18-b764-876f958c8474.jpg">
+          <div class="info">
+          <h3>Amaciante de Roupa Concentrado Brisa Suave Downy Frasco - 3L</h3>
+          <span>R$63,95</span>
+          <button class="add-to-cart">Adicione ao Carrinho</button>
+          </div>
+         </div>
+         <div class="produto" data-nome="Lenço Umedecido Neve Supreme Pacote - 48 Unidades" data-categoria="higiene">
+          <img src="assets/images/produtos/18738b7a-e392-4783-bc2f-427ec3669675.jpg">
+          <div class="info">
+          <h3>Lenço Umedecido Neve Supreme Pacote - 48 Unidades</h3>
+          <span>R$11,99</span>
+          <button class="add-to-cart">Adicione ao Carrinho</button>
+          </div>
+         </div>
+         <div class="produto" data-nome="Energético Monster Pacific Punch Lata - 473ml" data-categoria="bebida">
+          <img src="assets/images/produtos/126f7731-2827-4c63-8161-ac98b56d40a0.jpg">
+          <div class="info">
+          <h3>Energético Monster Pacific Punch Lata - 473ml</h3>
+          <span>R$8,99</span>
+          <button class="add-to-cart">Adicione ao Carrinho</button>
+          </div>
+         </div>
+         <div class="produto" data-nome="Queijo Mussarela Scala Pedaço Aprox. 350g" data-categoria="alimento">
+          <img src="assets/images/produtos/d16b4923-2ba0-44e3-a3c2-1dd62a881136.jpg">
+          <div class="info">
+          <h3>Queijo Mussarela Scala Pedaço Aprox. 350g</h3>
+          <span>R$19,57</span>
+          <button class="add-to-cart">Adicione ao Carrinho</button>
+          </div>
+         </div>
+         <div class="produto" data-nome="Creme Dental Colgate Máxima Proteção Anticáries mais Neutraçúcar Caixa - 70g" data-categoria="higiene">
+          <img src="assets/images/produtos/7ca8363b-705a-40f0-b3c2-4cb648f4c0dc.jpg">
+          <div class="info">
+          <h3>Creme Dental Colgate Máxima Proteção Anticáries mais Neutraçúcar Caixa - 70g</h3>
+          <span>R$30,90</span>
+          <button class="add-to-cart">Adicione ao Carrinho</button>
+          </div>
+         </div>
+         <div class="produto" data-nome="Arroz Agulhinha Fantástico 100% Nobres Tipo 1 Pacote - 1kg" data-categoria="higiene">
+          <img src="assets/images/produtos/dca07ea1-edc4-4b5b-b2de-b9ab4ef49346.jpg">
+          <div class="info">
+          <h3>Arroz Agulhinha Fantástico 100% Nobres Tipo 1 Pacote - 1kg</h3>
+          <span>R$7,99</span>
+          <button class="add-to-cart">Adicione ao Carrinho</button>
+          </div>
+         </div>
+         <div class="produto" data-nome="Feijão Carioca Tipo 1 Fantástico Grãos Especiais Pacote - 1kg" data-categoria="higiene">
+          <img src="assets/images/produtos/14507095-6458-46cf-90bb-b103452589f1.jpg">
+          <div class="info">
+          <h3>Feijão Carioca Tipo 1 Fantástico Grãos Especiais Pacote - 1kg</h3>
+          <span>R$6,99</span>
+          <button class="add-to-cart">Adicione ao Carrinho</button>
+          </div>
+         </div>
+         <div class="produto" data-nome="Suco Integral Prat`s Laranja - 900ml" data-categoria="higiene">
+          <img src="assets/images/produtos/ceb7f758-c0b7-11e7-a6aa-063e6e4e9f3a.jpg">
+          <div class="info">
+          <h3>Suco Integral Prat`s Laranja - 900ml</h3>
+          <span>R$15,90</span>
+          <button class="add-to-cart">Adicione ao Carrinho</button>
+          </div>
+         </div>
+         <div class="produto" data-nome="Suco Uva Aurora Integral Tinto Caixa - 1,5L" data-categoria="higiene">
+          <img src="assets/images/produtos/6f918af1-c57e-4ec0-9ca9-fe7f4e3d81dd.jpg">
+          <div class="info">
+          <h3>Suco Uva Aurora Integral Tinto Caixa - 1,5L</h3>
+          <span>R$19,90</span>
+          <button class="add-to-cart">Adicione ao Carrinho</button>
+          </div>
+         </div>
+         <div class="produto" data-nome="Hastes Flexíveis Cotonetes Johnsons Caixa - 300 Unidades" data-categoria="higiene">
+          <img src="assets/images/produtos/73ea43cf-1c22-4ec9-881c-920fe337f579.jpg">
+          <div class="info">
+          <h3>Hastes Flexíveis Cotonetes Johnsons Caixa - 300 Unidades</h3>
+          <span>R$24,90</span>
+          <button class="add-to-cart">Adicione ao Carrinho</button>
+          </div>
+         </div>
+         <div class="produto" data-nome="Absorvente com Abas Ultrafino Cobertura Seca Always Noturno Grande Pacote - 8 Unidades" data-categoria="higiene">
+          <img src="assets/images/produtos/4686e1a0-ab88-42fa-b040-562687beba0d.jpg">
+          <div class="info">
+          <h3>Absorvente com Abas Ultrafino Cobertura Seca Always Noturno Grande Pacote - 8 Unidades</h3>
+          <span>R$16,29</span>
+          <button class="add-to-cart">Adicione ao Carrinho</button>
+          </div>
+         </div>
+         <div class="produto" data-nome="Limpa Piso Uau Ação Clareadora Squeeze - 750ml" data-categoria="higiene">
+          <img src="assets/images/produtos/cc89d1a7-e2e7-43b9-99ad-1c8d782c0bc5.jpg">
+          <div class="info">
+          <h3>Limpa Piso Uau Ação Clareadora Squeeze - 750ml</h3>
+          <span>R$12,39</span>
+          <button class="add-to-cart">Adicione ao Carrinho</button>
+          </div>
+         </div>
+         <div class="produto" data-nome="Feijão Carioca Tipo 1 Fantástico Grãos Especiais Pacote - 1kg" data-categoria="higiene">
+          <img src="assets/images/produtos/14507095-6458-46cf-90bb-b103452589f1.jpg">
+          <div class="info">
+          <h3>Feijão Carioca Tipo 1 Fantástico Grãos Especiais Pacote - 1kg</h3>
+          <span>R$6,99</span>
+          <button class="add-to-cart">Adicione ao Carrinho</button>
+          </div>
+         </div>
+         <div class="produto" data-nome="Feijão Carioca Tipo 1 Fantástico Grãos Especiais Pacote - 1kg" data-categoria="higiene">
+          <img src="assets/images/produtos/14507095-6458-46cf-90bb-b103452589f1.jpg">
+          <div class="info">
+          <h3>Feijão Carioca Tipo 1 Fantástico Grãos Especiais Pacote - 1kg</h3>
+          <span>R$6,99</span>
+          <button class="add-to-cart">Adicione ao Carrinho</button>
+          </div>
+         </div>
+         <div class="produto" data-nome="Feijão Carioca Tipo 1 Fantástico Grãos Especiais Pacote - 1kg" data-categoria="higiene">
+          <img src="assets/images/produtos/14507095-6458-46cf-90bb-b103452589f1.jpg">
+          <div class="info">
+          <h3>Feijão Carioca Tipo 1 Fantástico Grãos Especiais Pacote - 1kg</h3>
+          <span>R$6,99</span>
+          <button class="add-to-cart">Adicione ao Carrinho</button>
+          </div>
+         </div>
+         <div class="produto" data-nome="Feijão Carioca Tipo 1 Fantástico Grãos Especiais Pacote - 1kg" data-categoria="higiene">
+          <img src="assets/images/produtos/14507095-6458-46cf-90bb-b103452589f1.jpg">
+          <div class="info">
+          <h3>Feijão Carioca Tipo 1 Fantástico Grãos Especiais Pacote - 1kg</h3>
+          <span>R$6,99</span>
+          <button class="add-to-cart">Adicione ao Carrinho</button>
+          </div>
+         </div>
+         <div class="produto" data-nome="Feijão Carioca Tipo 1 Fantástico Grãos Especiais Pacote - 1kg" data-categoria="higiene">
+          <img src="assets/images/produtos/14507095-6458-46cf-90bb-b103452589f1.jpg">
+          <div class="info">
+          <h3>Feijão Carioca Tipo 1 Fantástico Grãos Especiais Pacote - 1kg</h3>
+          <span>R$6,99</span>
+          <button class="add-to-cart">Adicione ao Carrinho</button>
+          </div>
+         </div>
+         <div class="produto" data-nome="Feijão Carioca Tipo 1 Fantástico Grãos Especiais Pacote - 1kg" data-categoria="higiene">
+          <img src="assets/images/produtos/14507095-6458-46cf-90bb-b103452589f1.jpg">
+          <div class="info">
+          <h3>Feijão Carioca Tipo 1 Fantástico Grãos Especiais Pacote - 1kg</h3>
+          <span>R$6,99</span>
+          <button class="add-to-cart">Adicione ao Carrinho</button>
+          </div>
+         </div>
+         <div class="produto" data-nome="Feijão Carioca Tipo 1 Fantástico Grãos Especiais Pacote - 1kg" data-categoria="higiene">
+          <img src="assets/images/produtos/14507095-6458-46cf-90bb-b103452589f1.jpg">
+          <div class="info">
+          <h3>Feijão Carioca Tipo 1 Fantástico Grãos Especiais Pacote - 1kg</h3>
+          <span>R$6,99</span>
+          <button class="add-to-cart">Adicione ao Carrinho</button>
+          </div>
+         </div>
+         <div class="produto" data-nome="Feijão Carioca Tipo 1 Fantástico Grãos Especiais Pacote - 1kg" data-categoria="higiene">
+          <img src="assets/images/produtos/14507095-6458-46cf-90bb-b103452589f1.jpg">
+          <div class="info">
+          <h3>Feijão Carioca Tipo 1 Fantástico Grãos Especiais Pacote - 1kg</h3>
+          <span>R$6,99</span>
+          <button class="add-to-cart">Adicione ao Carrinho</button>
+          </div>
+         </div>
+         <div class="produto" data-nome="Feijão Carioca Tipo 1 Fantástico Grãos Especiais Pacote - 1kg" data-categoria="higiene">
+          <img src="assets/images/produtos/14507095-6458-46cf-90bb-b103452589f1.jpg">
+          <div class="info">
+          <h3>Feijão Carioca Tipo 1 Fantástico Grãos Especiais Pacote - 1kg</h3>
+          <span>R$6,99</span>
+          <button class="add-to-cart">Adicione ao Carrinho</button>
+          </div>
+         </div>
+         <div class="produto" data-nome="Feijão Carioca Tipo 1 Fantástico Grãos Especiais Pacote - 1kg" data-categoria="higiene">
+          <img src="assets/images/produtos/14507095-6458-46cf-90bb-b103452589f1.jpg">
+          <div class="info">
+          <h3>Feijão Carioca Tipo 1 Fantástico Grãos Especiais Pacote - 1kg</h3>
+          <span>R$6,99</span>
+          <button class="add-to-cart">Adicione ao Carrinho</button>
+          </div>
+         </div>
+         <div class="produto" data-nome="Feijão Carioca Tipo 1 Fantástico Grãos Especiais Pacote - 1kg" data-categoria="higiene">
+          <img src="assets/images/produtos/14507095-6458-46cf-90bb-b103452589f1.jpg">
+          <div class="info">
+          <h3>Feijão Carioca Tipo 1 Fantástico Grãos Especiais Pacote - 1kg</h3>
+          <span>R$6,99</span>
+          <button class="add-to-cart">Adicione ao Carrinho</button>
+          </div>
+         </div>
+         <div class="produto" data-nome="Feijão Carioca Tipo 1 Fantástico Grãos Especiais Pacote - 1kg" data-categoria="higiene">
+          <img src="assets/images/produtos/14507095-6458-46cf-90bb-b103452589f1.jpg">
+          <div class="info">
+          <h3>Feijão Carioca Tipo 1 Fantástico Grãos Especiais Pacote - 1kg</h3>
+          <span>R$6,99</span>
+          <button class="add-to-cart">Adicione ao Carrinho</button>
+          </div>
+         </div>
+         <div class="produto" data-nome="Feijão Carioca Tipo 1 Fantástico Grãos Especiais Pacote - 1kg" data-categoria="higiene">
+          <img src="assets/images/produtos/14507095-6458-46cf-90bb-b103452589f1.jpg">
+          <div class="info">
+          <h3>Feijão Carioca Tipo 1 Fantástico Grãos Especiais Pacote - 1kg</h3>
+          <span>R$6,99</span>
+          <button class="add-to-cart">Adicione ao Carrinho</button>
+          </div>
+         </div>
+         <div class="produto" data-nome="Feijão Carioca Tipo 1 Fantástico Grãos Especiais Pacote - 1kg" data-categoria="higiene">
+          <img src="assets/images/produtos/14507095-6458-46cf-90bb-b103452589f1.jpg">
+          <div class="info">
+          <h3>Feijão Carioca Tipo 1 Fantástico Grãos Especiais Pacote - 1kg</h3>
+          <span>R$6,99</span>
+          <button class="add-to-cart">Adicione ao Carrinho</button>
+          </div>
+         </div>
+         <div class="produto" data-nome="Feijão Carioca Tipo 1 Fantástico Grãos Especiais Pacote - 1kg" data-categoria="higiene">
+          <img src="assets/images/produtos/14507095-6458-46cf-90bb-b103452589f1.jpg">
+          <div class="info">
+          <h3>Feijão Carioca Tipo 1 Fantástico Grãos Especiais Pacote - 1kg</h3>
+          <span>R$6,99</span>
+          <button class="add-to-cart">Adicione ao Carrinho</button>
+          </div>
+         </div>
+         <div class="produto" data-nome="Feijão Carioca Tipo 1 Fantástico Grãos Especiais Pacote - 1kg" data-categoria="higiene">
+          <img src="assets/images/produtos/14507095-6458-46cf-90bb-b103452589f1.jpg">
+          <div class="info">
+          <h3>Feijão Carioca Tipo 1 Fantástico Grãos Especiais Pacote - 1kg</h3>
+          <span>R$6,99</span>
+          <button class="add-to-cart">Adicione ao Carrinho</button>
+          </div>
+         </div>
+         <div class="produto" data-nome="Feijão Carioca Tipo 1 Fantástico Grãos Especiais Pacote - 1kg" data-categoria="higiene">
+          <img src="assets/images/produtos/14507095-6458-46cf-90bb-b103452589f1.jpg">
+          <div class="info">
+          <h3>Feijão Carioca Tipo 1 Fantástico Grãos Especiais Pacote - 1kg</h3>
+          <span>R$6,99</span>
+          <button class="add-to-cart">Adicione ao Carrinho</button>
+          </div>
+         </div>
+         <div class="produto" data-nome="Feijão Carioca Tipo 1 Fantástico Grãos Especiais Pacote - 1kg" data-categoria="higiene">
+          <img src="assets/images/produtos/14507095-6458-46cf-90bb-b103452589f1.jpg">
+          <div class="info">
+          <h3>Feijão Carioca Tipo 1 Fantástico Grãos Especiais Pacote - 1kg</h3>
+          <span>R$6,99</span>
+          <button class="add-to-cart">Adicione ao Carrinho</button>
+          </div>
+         </div>
+         <div class="produto" data-nome="Feijão Carioca Tipo 1 Fantástico Grãos Especiais Pacote - 1kg" data-categoria="higiene">
+          <img src="assets/images/produtos/14507095-6458-46cf-90bb-b103452589f1.jpg">
+          <div class="info">
+          <h3>Feijão Carioca Tipo 1 Fantástico Grãos Especiais Pacote - 1kg</h3>
+          <span>R$6,99</span>
+          <button class="add-to-cart">Adicione ao Carrinho</button>
+          </div>
+         </div>
+         
+    </section> 
+    <div class="carrinho-visualizacao" id="carrinho">
+      <h2>Carrinho de Compras</h2>
+      <div class="itens-carrinho"></div>
+      <div class="total">
+          <strong>Total: R$<span id="total">0.00</span></strong>
+      </div>
+    </div>
+    <script src="assets\js\script.js"></script>
+</body>
+</html>

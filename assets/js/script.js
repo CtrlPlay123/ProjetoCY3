@@ -104,3 +104,4 @@ document.querySelectorAll('.add-to-cart').forEach(button => {
         addToCart(nome, preco);
     });
 });
+ 

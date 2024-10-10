@@ -75,17 +75,47 @@ function addToCart(nome, preco) {
     updateCarrinho();
 }
 
+function removeFromCart(index) {
+    carrinho.splice(index, 1); // Remove o item do array usando o índice
+    updateCarrinho(); // Atualiza o carrinho
+}
+
+function comprarTudo() {
+    if (carrinho.length > 0) {
+        alert(`Compra realizada! Total: R$${totalElement.textContent}`); // Mensagem de confirmação
+        carrinho = []; // Esvazia o carrinho
+        updateCarrinho(); // Atualiza o display do carrinho
+    } else {
+        alert('Seu carrinho está vazio!');
+    }
+}
 
 function updateCarrinho() {
     itensCarrinhoElement.innerHTML = '';
     let total = 0;
 
-    carrinho.forEach(produto => {
+    carrinho.forEach((produto, index) => {
         const itemElement = document.createElement('div');
         itemElement.textContent = `${produto.nome} - R$${produto.preco}`;
+
+        // Criar botão de remover
+        const removeButton = document.createElement('button');
+        removeButton.textContent = 'Remover';
+        removeButton.addEventListener('click', () => removeFromCart(index));
+
+        itemElement.appendChild(removeButton);
         itensCarrinhoElement.appendChild(itemElement);
+
         total += parseFloat(produto.preco);
     });
+
+    // Adiciona o botão "Comprar Tudo" se houver itens no carrinho
+    if (carrinho.length > 0) {
+        const comprarButton = document.createElement('button');
+        comprarButton.textContent = 'Comprar Tudo';
+        comprarButton.addEventListener('click', comprarTudo);
+        itensCarrinhoElement.appendChild(comprarButton);
+    }
 
     totalElement.textContent = total.toFixed(2);
 }
@@ -104,4 +134,5 @@ document.querySelectorAll('.add-to-cart').forEach(button => {
         addToCart(nome, preco);
     });
 });
+
  

@@ -342,7 +342,7 @@ header {
 
 /* parte do Modo noturno */
 .produtos.noturno{
-  background-color: #1a2428;
+  background-color: black;
   color: #fff;
 }
 header.noturno{

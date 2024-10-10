@@ -109,10 +109,11 @@ function updateCarrinho() {
         total += parseFloat(produto.preco);
     });
 
-    // Adiciona o botão "Comprar Tudo" se houver itens no carrinho
+    // Adiciona o botão "Finalizar Compra" se houver itens no carrinho
+
     if (carrinho.length > 0) {
         const comprarButton = document.createElement('button');
-        comprarButton.textContent = 'Comprar Tudo';
+        comprarButton.textContent = 'Finalizar Compra';
         comprarButton.addEventListener('click', comprarTudo);
         itensCarrinhoElement.appendChild(comprarButton);
     }

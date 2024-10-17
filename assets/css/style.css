@@ -471,3 +471,25 @@ header.noturno{
 .carrinho.active {
   display: block;
 }
+
+.carrinho {
+  position: relative;
+  width: 90px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.carrinho .close-carrinho {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.carrinho.active {
+  display: block;
+}

@@ -140,4 +140,8 @@ document.querySelectorAll('.add-to-cart').forEach(button => {
     });
 });
 
+document.querySelector('.close-carrinho').addEventListener('click', () => {
+    carrinhoElement.classList.remove('active');
+});
+
  

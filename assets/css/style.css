@@ -309,6 +309,7 @@ header {
 /* CARRINHO */
 .carrinho {
   margin-left: 15px; 
+  border-radius: 2em;
 }
 
 .carrinho a {
@@ -451,3 +452,22 @@ header.noturno{
   color: var(--green-color);
 }
 
+.itens-carrinho {
+  max-height: 300px; /* Altura máxima antes de aparecer a rolagem */
+  overflow-y: auto; /* Adiciona rolagem vertical */
+  border: 1px solid #ccc; /* Apenas para visualização */
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.carrinho {
+  position: relative;
+  width: 300px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.carrinho.active {
+  display: block;
+}

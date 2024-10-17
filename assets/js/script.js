@@ -109,6 +109,8 @@ function updateCarrinho() {
         total += parseFloat(produto.preco);
     });
 
+
+
     // Adiciona o botão "Finalizar Compra" se houver itens no carrinho
 
     if (carrinho.length > 0) {
@@ -118,6 +120,8 @@ function updateCarrinho() {
         itensCarrinhoElement.appendChild(comprarButton);
     }
 
+
+    
     totalElement.textContent = total.toFixed(2);
 }
 
